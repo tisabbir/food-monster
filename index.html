@@ -5,12 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary-color': '#F48E28',
+            }
+          }
+        }
+      }
+    </script>
     <title>Food Monster</title>
 </head>
 <body class="">
     <header class="max-w-6xl mx-auto">
 
-        <h1 class="text-xl font-bold text-primary ">Hello World</h1>
+       <section class="mt-12">
+        <nav class="flex justify-between items-center">
+          <div>
+            <img src="./assets/logo.png" alt="logo">
+          </div>
+          <div>
+            <ul class="flex gap-12 font-bold items-center">
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Cart</a></li>
+            </ul>
+          </div>
+          <div class="w-72 flex justify-between items-center shadow-xl drop-shadow-lg px-4 py-1 rounded-lg border border-[#ADADAD]">
+            <div class="flex items-center gap-4">
+              <img class="w-6" src="./assets/icons/search.svg" alt="">
+              <h3 class="text-xl">Search</h3>
+            </div>
+            <div class="flex  items-center gap-3 ">
+              <h1>|</h1>
+              <img class="w-6" src="./assets/icons/cart.svg" alt="">
+            </div>
+          </div>
+        </nav>
+       </section>
         
     </header>
     <main class="max-w-6xl mx-auto">
