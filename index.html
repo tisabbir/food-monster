@@ -394,10 +394,11 @@
           <div class="text-white space-y-4">
             <h1 class="uppercase text-xl font-bold">Subscribe to our Newsletter</h1>
             <p>But I must explain to you how all this mistaken idea of denouncing pleasur and prasising pain was bron.I must explain to you how all this mistaken idea of denouncing pleasur and prasising pain was bron.</p>
-            <div class="flex flex-wrap justify-between items-center bg-white py-3 px-4 rounded-xl">
-              <input class="text-gray-700 focus:border-none" placeholder="Type your email" />
-              <button class="uppercase px-4 py-2 rounded-xl bg-primary">Subscribe</button>
-            </div>
+            <form id="form" class="flex flex-wrap justify-between items-center bg-white py-3 px-4 rounded-xl">
+              <input type="email" id="subscribe-field" class="text-gray-700 focus:border-none" placeholder="Type your email" required/>
+              <button type="submit" id="subscribe-btn" class="uppercase px-4 py-2 rounded-xl bg-primary">Subscribe</button>
+            </form>
+            <p id="message" class=""></p>
           </div>
         </div>
       </section>

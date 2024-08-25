@@ -14,3 +14,23 @@ seeMoreButton.addEventListener(
         }
     }
 )
+
+// Subscribe Newsletter
+
+const message = document.getElementById('message');
+const subscribeField = document.getElementById('subscribe-field');
+const form = document.getElementById('form');
+
+form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    const email = subscribeField.value;
+    if(email){
+        message.textContent = "You have successfully subscribed";
+        message.style.color = 'green';
+    }else{
+        
+        message.textContent = "Please provide a valid email.";
+        message.style.color = 'red';
+    }
+
+})
